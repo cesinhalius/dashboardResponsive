@@ -28,7 +28,8 @@
 }
 
 .danger{
-    color: var(--color-primary-varient)
+    color: var(--color-primary-varient);
+    font-size: 1.4rem;
 }
 
 *{
@@ -59,6 +60,10 @@ img{
     width: 100%;
 }
 
+h2{
+    font-size: 1.4rem;
+}
+
 .profile-photo{
     width: 2.8rem;
     height: 2.8rem;
@@ -75,7 +80,7 @@ img{
 
 aside{
     height: 100vh;
-    background: gray;
+    
 }
 
 aside .top{
@@ -87,7 +92,7 @@ aside .top{
 }
 aside .logo{
     display: flex;
-    gap: .8rem;
+    gap: .9rem;
 }
 
 aside .logo img{
