@@ -27,6 +27,10 @@
     --box-shadow: 0 2rem 3rem var(--light);
 }
 
+.danger{
+    color: var(--color-primary-varient)
+}
+
 *{
     box-sizing: border-box;
     font-size: 14px;
