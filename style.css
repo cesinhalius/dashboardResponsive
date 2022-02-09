@@ -24,7 +24,7 @@
     --card-padding:1.8rem;
     --padding:1.2rem;
 
-    --box-shadow: 0 2rem 3rem var(--light);
+    --box-shadow: 0 2rem 3rem var(--dark-varient);
 }
 
 .danger{
@@ -107,7 +107,6 @@ aside .close{
 /*  SideBar */
 
 aside .sidebar{
-    background: var(--white);
     display: flex;
     flex-direction: column;
     height: 86vh;
@@ -175,8 +174,13 @@ aside .sidebar .message-count{
 /*----------MAIN-----------------------*/
 
 main{
-    margin-top: 1.4rem;
+    margin-top: 1.5rem;
+    margin-left: 1.4rem;
+}
 
+main h1{
+    font-size: 1.6rem;
+    margin-left: 1rem;
 }
 main .date{
     display: inline-block;
@@ -275,4 +279,19 @@ main .insights .expenses svg circle{
 main .insights .income svg circle{
     stroke-dasharray: 110;
     stroke-dashoffset: 35;
+}
+main .insights .progress .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .insights small{
+    margin-top: 1.6rem;
+    display: block;
 }
