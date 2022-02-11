@@ -28,8 +28,11 @@
 }
 
 .danger{
-    color: var(--color-primary-varient);
-    font-size: 1.4rem;
+    color: var(--color-danger);
+    font-size: 1rem;
+}
+.success{
+    color: var(--color-success);
 }
 
 *{
@@ -377,25 +380,90 @@ main .recent-order a{
 
 /*---------------ATUALIZÇÂO RECENTES-----------------*/
 
-.right .recent-updates{
+.right .recent-update{
     margin-top: 1rem;
 }
-.right .recent-updates h2{
-    margin-bottom: .8rem;
+.right .recent-update h2{
+    margin:1rem
 }
-.right .recent-updates .updates{
+.right .recent-update .updates{
     background: var(--white);
     box-shadow: var(--box-shadow);
     border-radius: var(--card-border-radius);
     padding: var(--padding);
     transition: all 300ms ease;
+    margin-left: 1rem;
 }
-.right .recent-updates .updates:hover{
+.right .recent-update .updates:hover{
     box-shadow: none; 
 }
-.right .recent-updates .update{
+.right .recent-update .updates .update{
    display: grid;
    gap: 1rem;
    grid-template-columns: 2.6rem auto;
    margin-bottom: 1rem;
+}
+
+/*===========Sales====================*/
+
+.right .sales-analytics{
+    margin-top: 2rem;
+}
+
+.right .sales-analytics h2{
+    margin-bottom: .8rem;
+}
+
+.right .sales-analytics .item{
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.right .sales-analytics .item:hover{
+    box-shadow: none;
+}
+
+.right .sales-analytics .item .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+.right .sales-analytics .item .icon{
+    padding: .6rem;
+    color: var(--white);
+    border-radius: 50%;
+    background: var(--color-primary);
+    display: flex;
+}
+
+.right .sales-analytics .item.offline .icon{
+background: var(--color-danger);
+}
+
+.right .sales-analytics .item.customers .icon{
+background: var(--color-success);
+}
+
+
+.right .sales-analytics .add-product{
+    background-color: transparent;
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .sales-analytics .add-product div{
+    display: flex;
+    align-items: center;
+
 }
